@@ -3,4 +3,4 @@
 
 Estou aprendendo a gerenciar meus repositorios !
 
-<a href="https://lawlietry.github.io/exercicios/ex001">primeiro site em html</a>
+<a href="https://lawlietry.github.io/html-css/exercicios/ex001">primeiro site em html</a>
