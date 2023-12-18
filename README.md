@@ -3,4 +3,4 @@
 
 Estou aprendendo a gerenciar meus repositorios !
 
-<a href="https://lawlietry.github.io/html-css/desafios%20do%20curso/desafio%2010%20com%20ajuda/android.html"> link para o projeto beta de um site
+<a href="https://lawlietry.github.io/exercicios/ex001">primeiro site em html</a>
