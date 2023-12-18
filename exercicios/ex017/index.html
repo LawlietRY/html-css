@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            background-color: black;
+            font-size: 1.2em; /*Normalmente o tamanho original da fonte e 16px, que geralmente corresponde a 1em*/
+
+            /*Medidas Absolutas: cm, mm, in (polegas), px (pixel), pt (ponto, medida do word pra tamanho de fonte), pc (picka)
+            
+            Medidas Relativas: em (tamanho da altura da letra maiscula M da letra), ex (altura x da letra), rem (tipo o em so que relativo a fonte original do body), vm (referente a altura da tela viewport), vh (altura da viewport)
+
+            recomendação usada e usar o em (a mais recomendada pra uso) e px(pixel)*/
+
+            font-family:Arial, Helvetica, sans-serif; color: white; /*Safe-Combination, são basicamente, combinações safe, que vão te mostrar fontes parecidas, que o seu codigo vai buscar, para mostrar no site, caso não encontre !*/
+        
+        /*weight (peso), widht (largura) height (altura)
+        /*lighter, normal, bolt, bolder (pesos das fontes) pode representar numericamente tbm de 100 a 900, apesar de nem todos ter.*/
+    
+    font-style: italic;/*estilos, italicos, */
+    text-decoration: double;/*para configurações de sublinhar e etc*/
+}
+
+h1 {
+    font: italic normal 3em "verdana";
+    /* shorthand font propriedade para uma unica linha
+font-style -> font-wight -> font-size -> font-family*/
+}
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur sequi sed quod laudantium eveniet nisi ipsa tempora maiores similique iusto illum odio, aliquam quia ea saepe consectetur perferendis iure Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque architecto repudiandae, iure optio dolorem voluptates debitis cum corrupti nisi ipsam iusto quibusdam sequi eaque quam reprehenderit, ratione accusamus! Porro, ex?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut similique facilis voluptatem perspiciatis ad dolor quaerat impedit veniam quis fuga possimus ex optio, voluptate officia maxime eaque? Vel, officiis. Cumque?</p>
+    <hr>
+    <h2>Subtitulo do exercicios</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur sequi ut maiores nam nisi inventore sapiente odit ratione rerum veniam saepe quaerat, repellendus, harum numquam pariatur explicabo totam! Soluta?</p>
+    <a href="fonte02.html" target="_self">bla bla</a>
+</body>
+</html>

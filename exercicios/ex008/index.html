@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: bisque;
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Codigo fonte / Pré-formatação</h2>
+    <p>Como por exemplo, o comando <code>document.getElementById('teste')</code> (utilizando a tag code, otima pra ler codigos) é escrito em linguagem JavaScript</p>
+    <hr>
+    <pre>
+        <code>
+num = int(input('Digite um número'))
+if num % 2 == 0;
+    print(f' 0 numero {num} é par')
+else:
+    print(f' 0 numero {num} é impar)
+print ('fim do programa')
+        </code>
+    </pre>
+    <p>A utilização da tag pre, envelopando a tag code, serve justamente para manter o formato do codigo com os espaçamentos dessa maneira, para que não fique assim: <br>
+        <code>
+        num = int(input('Digite um número')) if num % 2 == 0;
+    </code></p>
+    <hr>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rapido</q> (utilizando a tag "q", eu consigo dar sentido a citação)</p> <!--Citações de pessoas, utilize a tag q, e mais indicada, agora exemplos simples, pode colocar as aspas a mão mesmo-->
+    <hr>
+    <h2>Citações Completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos</p>
+    <blockquote cite="https://www.amazon.com.br/Codificação-Para-Leigos-Nikhil-Abraham/dp/8550804797/ref=sr_1_2?adgrpid=129505957336&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p5fa1Rt_LgYd8pDZRN-dWpBLY2YJZjBFa3MRjJu_vKqkcfN5tkn5TRoCb6wQAvD_BwE&hvadid=595815709129&hvdev=c&hvlocphy=9101292&hvnetw=g&hvqmt=e&hvrand=71142021034347805&hvtargid=kwd-631960683830&hydadcr=5760_13215245&keywords=html+para+leigos&qid=1700287138&s=books&sr=1-2">
+        A diferença entre elementos inline e um bloco de texto é importante. OOs elementos HTML neste capitulo descrevem os blocos de texto
+    </blockquote> <!--Utilizando a tag blockquote, ira abrir para uma citação mais complexa, que vai deslocar o texto, um pouco para a lateral do texto, dentro dessa mesma tag, pode utilizar a tag "cite", para colocar o link da citação{ DETALHE IMPORTANTE A TAG CITE deve ser colocada DENTRO DO tag blockquote}-->
+    <hr>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascating Style Ships">CSS</abbr>, estou adorando. (consigo abreviar utilizando a tag abbr)</p>
+    <hr>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo>(utilizando a tag bdo você consegue inverter o texto kkkk)</p>
+</body>
+</html>

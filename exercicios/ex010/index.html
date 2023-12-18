@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links - Ancôras</title>
+</head>
+<body>
+    <h1>Links e Ancôras</h1><!--SEO (search engine optimization) colocar no caderno e pesquisar depois-->
+    <p>Neste capitulo, vamos aprender como utilizar links e ancoras no seu site, com html</p>
+    <hr>
+    <h2>Usando links externos</h2>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositorio publico no GitHub</a></p>
+    <p>Você também pode acessar o <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="_external">meu canal gratuito no youtube</a></p>
+    <hr>
+    <p>Nos exemplos acima, utilizando da tag "a", podemos colocar um link externo vinculado ao texto, porém o link vai sobrepor o site, e pra que isso não aconteça, e seja aberto uma nova pagina, você vai utilizar o atributo "target="_blank", e caso for um link de outra pessoa, e que não faz parte do site, além do blank, você vai usar a "rel=_external"</p><!--Anotar isso no caderno depois !-->
+    <hr>
+    <h2>Usando Links, internos</h2>
+    <p>Está é a primeira pagina do site, se você quiser pode acessar também a minha <a href="pag002.html" rel="next"><!--Você deve utilizar o next e o prev, para informar pro mecanismo de busca, qual e a proxima pagina e qual a anterior a essa, diretamente, muito util em situações como documentos subsequentes-->Segunda Pagina</a></p><!--Quando o link for interno, você pode apenas colocar a ref html, sem colocar a url inteira, contanto que os html, estejam na mesma pagina !-->
+    <p>Esta pagina é um oferecimento de <a href="https://www.hostnet.com.br" target="_blank" rel="nofollow">Hostnet</a></p>
+    <hr>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">Pagina de notícias</a></p>
+    <hr>
+    <h2>Vamos aprender a colocar links, de dowload</h2>
+    <ul>
+    <li><a href="#" type="aplication/pdf">Baixar o livro em PDF</a></li>
+    <li><a href="#" download="pdfcoffee.com_livro-nao-me-faca-pensarsteve-krug-2-pdf-free.rar" type="application/rar">Livro compactado em ZIP</a></li>
+    </ul><!--Anotar também, para fazer dowload do arquivo, deve utilizar a tag, download, com o nome do arquivo, e o type, com o application e o tipo do arquivo que está sendo baixado-->
+
+</body>
+</html>

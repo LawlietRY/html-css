@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* { /*Seletor global das CSS*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: white;
+    width: 600px; /*Determina o tamanho da caixa*/
+    padding: 10px; /*Para dar um pequeno espaçamento do conteudo para a borda das caixas*/
+    margin: auto; /*Para centralizar automaticamente a main, indepedente de mexer a janela*/
+    border-radius: 10px; /*Para arredondar as bordas da box*/
+    box-shadow: 5px 5px 15px rgb(136, 109, 93, 0.616); /*Para colocar sombra, parametros de largura, altura, espalhamento e cor*/
+}
+
+h1 {
+
+    color: #F39209;
+    text-align: center; /*Determina o alinhamento do texto*/
+    text-shadow: 1px 1px 2px rgb(129, 77, 5, 0.726);
+}
+
+h2 {
+
+    color: #125189;
+}
+
+body {
+        background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+
+    text-align: justify;
+}

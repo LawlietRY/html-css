@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: beige;
+        }
+        hr {background-color: rgb(252, 0, 0);}
+    </style>
+    <title>Imagens Dinamicas</title> <!--Anotar no caderno depois, img pequena 300x300 celular, imag media 700x700, img grande 1000x1000-->
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site, em varios dispositivos diferentes, ou simplismente aumente e diminua o tamanho da janela do seu navegador</p>
+
+    <picture><!--Evitar de utilizar espaços quando nomear arquivos que serão utilizados nos codigos, pode dar erro no codigo !-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!--Quando utilizar a tag source, utilize min-width para que o calculo da imagem seja o minimo do tamanho e max-width, quando for o maximo do tamanho, utilizando max, coloque o tamanho da imagem maior como base mais 50px-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--Anotar no caderno, o tag source media:type, para colocar imagens flexiveis-->
+        <img src="imagens/foto-g.png" alt="Imagem flexivel"><!--A ordem que estiver o codigo, vai mudar a ordem das imagens, então sempre deixe em ordem, do maior para o menor, ou vice-versa !-->
+    </picture>
+
+    <h1><hr></h1>
+
+    <h1>Vamos aprender como colocar audios no site</h1>
+    <audio preload="metadata" src="midia/audio-bts.mp3" controls autoplay></audio><!--você pode utilizar essa forma que é mais simples-->
+    <audio autoplay controls><!--prelouds auto - ele so vai considerar que o site terminou de carregar, quando terminar de carregar o audio/metadata ele so vai carregar alguns dados do arquivo/none - ele não faz nada-->
+        <source src="midia/audio-bts.mp3" type=audio/mpeg><!--Para utilizar mp3, utilize o type mpeg, para ogg, use ogg, para wav, utiliza wav-->
+        <p>Infelizmente seu navegador não consegue reporduzir áudio <a href="midia/audio-bts.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+    <hr>
+    <h1>Vamos aprender a colocar video no seu site localmente</h1>
+    <p>Esse video está hospedado no meu proprio servidor</p>
+    <video controls width="500" loop><!--Caso quiser colocar uma tumb utilize a tag poster-->
+        <source src="#" type="video/mp4">
+        <source src="#" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+    <video src="midia/video-11.mp4" width="500" controls></video><!--utilize a tah width para diminuir o tamanho de algo-->
+    <br>
+    <hr>
+    <hr>
+    <h1>Inserindo videos do youtube</h1><!--Dessa maneira, você hospeda os videos fora do site, o que faz ele não consumir muita banda-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=6AJMFmcTWH3llYTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr>
+    <h1>Inserindo videos do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/494555212?h=1d8a764ae3&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+</body>
+</html>

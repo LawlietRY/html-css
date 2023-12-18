@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {background-color: rosybrown;}
+    </style>
+    <title>Listas com HTML</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Existe uma tag que é a "ol", que siginifica ordned list (lista ordenada) usada para funções que importam a sequencia, por exemplo:</p>
+    <ol>
+        <li> Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <p>Também e possivel, personalizar o parametro da lista, usando o type no tag ol, por exemplo:</p>
+    <ol type="A"><!--Existem varios tipos de types, que você pode colocar aki, desde numeros romanos, até letras alfabeticas-->
+        <li>Acordar cedo</li>
+        <li>Já pode au mussa</li>
+        <li>Voltar pra casa</li>
+    </ol>
+    <hr>
+    <h2>Listas não ordenadas</h2>
+    <p>Essas listas por sua vez, são utilizadas quando não e necessario uma ordem na lista, e pode ser feita em qualquer ordem, é feito utilizando a tag "ul" que significa urnerled list, ou seja, lista desordenada</p>
+    <ul>
+        <li>Pao</li>
+        <li>Leite</li>
+        <li>Arroz</li>
+    </ul>
+    <p>Assim como a lista criada pela tag "ol", você pode colocar modelos diferentes seguindo a mesma premissa, por exemplo:</p>
+    <ul type="square"><!--É possivel, criar algumas formas, como square, circle-->
+        <li>&lt;--Pão</li>
+        <li>Queijo</li>
+    </ul>
+    <hr>
+    <h2>Juntando Listas v1.0</h2>
+    <p>Também, e possivel juntar listas, utilizando as mesmas tags (verificar no codigo)</p>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Cliper</li>
+            <li>Visual Basic</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="3"><!--Quando quiser que a lista já começe de um certo ponto, sempre use o valor numero desse ponto, mesmo sendo uma lista alfabetica, o comando start, entendende por numerico !-->
+            <li>Phyton</li>
+            <li>Php</li>
+            <li>JavaScript</li>
+        </ol>
+    </ol>
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>PlayStation 1</li>
+        <ul type="square">
+            <li>God Of War</li>
+            <ul type ="circle">
+                <li>God Of War 2</li>
+            </ul>
+            <li>Bomba Patch</li>
+            <li>Gta San Andreas</li>
+            <li>Medal Of Honor</li>
+            <li>The Sims</li>
+        </ul type="square">
+        <li>Daynavision</li>
+        <ul type="square">
+            <li>Contra</li>
+            <li>Um jogo do leão pulando circulos de fogo</li>
+            <li>Um jogo de formula 1 que tinha</li>
+        </ul type="square">
+        <li>PC - Computador</li>
+        <ul type="square">
+            <li>Assassins Creed</li>
+            <li>Gta's (todos)</li>
+            <ul>
+                <li>Gta V</li>
+            </ul>
+            <li>League Of Legends</li>
+        </ul type="square"><!--Quando você segura o alt e clica, ele duplica o que você estiver escrevendo-->
+    </ol>
+    <hr>
+    <h2>Lista de Definição</h2>
+    <p>Lista de definição e dita com a tag "dl", utilizada para definir algo, seguindo o usando a tag "dt" para o termo, e a tag "dd" para a descrisção, exemplo:</p>
+    <dt>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+    </dt>
+    <hr>
+    <p>Um exemplo pratico disso seguindo a premissa, jogos, seria:</p>
+    <dt>
+        <dt>GTA</dt>
+        <dd>Grand Theft Auto, ou apenas GTA e um jogo eletronico, que surgiu a muito tempo atrás ainda com camera vista de cima, mas que se popularizou muito e hoje é uma das maiores franquias da consasgrada empresa, rockstar games</dd>
+        </dt>
+        <hr>
+
+</body>
+</html>

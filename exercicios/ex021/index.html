@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa</title>
+    <style>
+        h1#conted { /*Box-Level*/
+            background-color: lightgray;
+
+            height: 300px;
+            width: 300px;
+            /*Tamanho da caixa, height altura, e widht como largura*/
+
+            border: 10px solid darkslategray;
+            /* Shorthand de border, a ordem e tamanho, style e color*/
+
+            padding: 10px;
+            /*Shorthand de padding, você determina o tamanho seguindo a ordem, cima, direita, baixo, esquerda, tipo um relogio, e se todas foram exatamente iguais, vc pode usar apenas um valor, quando colocar apenas dois valor ele vai colocar o de cima e de baixo iguais, e o da esquerda e o da direita ficam iguais tbm*/
+
+            margin: 20px auto 40px auto;
+            /*Shorthand de margin, segue a mesma filosofia do shorthand de padding, seguindo por cima, direita, baixo e esquerda, seguindo a regra de numero unico e de pares, contudo, você pode utilizar o comando auto e certas direções para automatizar a centralização*/
+
+            outline: 5px dashed salmon;
+            /*Shorthand de outline, segue a mesma coisa do border, tamanho, style e cor por ultimo*/
+            
+            /*Para deixar a caixa sempre no meio, use o comando margin; auto*/
+    
+        }
+
+        a { /*Inline-Level*/
+            color: blue;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo (Caixa HTML)</h1>
+    <hr>
+    <h1 id="conted">Exemplo de Caixa Box-Level</h1>
+    <p>Paragrafos também são exemplos de box-level, mas os <a href="caixa02.html" target="_self">Link são exemplos de caixas inline-level</a> Vamos ver como tudo isso funciona !</p>
+</body>
+</html>

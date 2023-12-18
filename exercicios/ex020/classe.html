@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            text-align: center;
+            height: 200px; /*Corresponde a ALTURA*/
+            width: 200px; /*Corresponde a LARGURA*/
+            border: 1px solid black; /*Shorthand de borda, 1 tamanho, 2 tipo, 3 cor*/
+        }
+        
+        div:hover {
+            background-color: yellow;
+        }
+
+        a {
+            color: black;
+        }
+    /*Usando : você usa uma pseudo-classe
+    Existem muitas tags, de pseudo-classe: (pseudo, são estados de elementos de um site, usando o CSS)
+    hover = vai fazer que aconteça algo quando você passar o mouse por cima
+    visited = vai fazer algo quando você já tiver clicado no link em questão
+    active = vai servir para quando você clicar em algo,*/
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classes HTML</h1>
+    <div id="d1">01</div>
+    <a href="hover.html" target="_self"><div id="d2">02</div></a>
+    <a href="links.html" target="_self"><div id="d3">03</div></a>
+    
+</body>
+</html>

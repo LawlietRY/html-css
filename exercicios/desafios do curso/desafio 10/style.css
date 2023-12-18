@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap'); /*Sempre colocar a font do google, na primeira linha*/
+
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+picture {
+    width: 100%;
+}
+
+body {
+    background-color: #3AD17E;
+    background-attachment: fixed;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1,p {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    border: 0px;
+}
+
+header {
+    background-image:linear-gradient(to bottom, #3AD17E, #0ca852, #1A5B37 9%, #0a311c 80%);
+    background-attachment: fixed;
+}
+
+header>h1 {
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+header>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0px 8px;
+}
+
+header>a:hover {
+    background-color:#3AD17E;
+    border-top: #3AD17E;
+    border-left: #3AD17E;
+    border-right: #3AD17E;
+    padding: 20px 5px 0px 5px;
+}
+
+main>h2 {
+    font-family: 'Android';
+    background-image: linear-gradient(to right, #3ad17e54, rgba(226, 226, 226, 0.13));
+    text-indent: 10px;
+}
+
+#youtube {
+    width: 93%;
+    height: 700px;
+    align-items: center;
+    border-top-width: 20px;
+    border-left-width: 48px;
+    border-bottom-width: 20px;
+    border-right-width: 48px;
+    border-style: solid;
+    border-color: #1A5C38;
+}
+
+#subtitulo {
+    border: 40px solid transparent;
+    text-align: center;
+}
+
+#titulo {
+    font-family: 'Android';
+    color: #1A5B37;
+    padding: 25px solid transparent;
+}
+
+main>p {
+    text-align: justify;
+    padding: 10px 0px;
+    text-indent: 25px;
+    color: black;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    min-width: 260;
+    max-width: 800px;
+    padding: 10px 40px;
+    box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.445);
+    margin: auto;
+}
+
+div {
+    background-color: #C5EBD6;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.445);
+    margin: auto;
+}
+
+div>p {
+    text-indent: 25px;
+    padding: 20px;
+    text-align: justify;
+    color: black;
+}
+
+#link2 {
+    text-decoration: none;
+    color: #1A5B37;
+    font-weight: bold;
+}
+
+div>h2 {
+    background-color: #2FA866;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+    padding: 20px;
+}
+
+footer>p {
+    color: #1bc969;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 20px;
+    background-color: #1a5c38e3;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.rodape {
+    text-decoration: none;
+    color: white;
+}
