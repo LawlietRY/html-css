@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela em tela pequena</title>
+    <style>
+             body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse; /*Dentro do TABLE você coloca pra sumir o espaço*/
+            position: relative;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead>tr>th {
+            position: sticky; /*Para fazer ele grudar numa parte da tela, com a função abaixo você vai definir em que parte ele vai grudar*/
+            top: -1px; /*Essa função aqui*/
+            background-color: rgb(73, 73, 73);
+        }
+
+
+        thead,tfoot {
+            background-color: rgb(73, 73, 73);
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+         
+        caption {
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        tbody>tr:nth-child(2n) /*Semitag usada para repetir uma função a cada um determinado numero de colunas, no exemplo com "2", ele fara um efeito de uma sim e uma não, tipo zebrado, pode ser usado odd(numeros impar) ou even(numeros par)*/{
+            background-color: lightgray;
+        }
+
+        div#container {
+            overflow-x: auto; /*Utilizando essa tag overflow, ele vai pegar tudo que iria vazar da tela e comportar numa rolagem interna, funciona muito bem para tabelas, só e necessario englobar toda a tabela numa div*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consequuntur natus. Hic laboriosam, possimus quis obcaecati minus eum et nisi dicta voluptates, officiis nihil facilis saepe minima. Voluptas, nulla tempore.</p>
+
+    <div id="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Samsung Galaxy</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>43</td>
+                    <td>63</td>
+                    <td>12</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>43</td>
+                    <td>63</td>
+                    <td>12</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy 2</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>43</td>
+                    <td>63</td>
+                    <td>12</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy 3</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>43</td>
+                    <td>63</td>
+                    <td>12</td>
+                    <td>54</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
