@@ -15,6 +15,12 @@
             height: 400px;
         }
 
+        a:hover {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -31,7 +37,9 @@
 
 
     <!--Para colocar navegações de uma pagina dentro da mesma pagina, você deve nomear o iframe, com a tag "name" e quando colocar um link, você vai colocar como target, o nome em si do iframe que você colocou!!-->
-    <iframe src="#" frameborder="0" name="frame">
+    <iframe src="" frameborder="0" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at culpa laborum, et porro maxime quia mollitia modi possimus accusantium dolorem doloribus iste commodi quasi quod itaque veritatis error velit!</p>"
+        > <!--Para colocar alguma coisa dentro da caixa do iframe, você pode colocar o srcdoc, para colocar algo dentro do iframe, contudo, você vai ter que digitar todo o codigo, "empilhado" e ele vai ficar estatico no iframe, mas o recomendado e abrir um outro codigo separado para colocar nele-->
         <p>Infelizmente seu navegador não é compatível com isso.</p>
     </iframe>
 
