@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulario</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iUsu">Usuario: </label>
+            <input type="text" name="Usu" id="iUsu" required minlength="5" autocomplete="username">
+        </p>
+        <p>
+            <label for="Isen">Senha: </label>
+            <input type="password" name="Sen" id="Isen" required minlength="8" maxlength="15" size="10" placeholder="senha" autocomplete="current-password">
+
+            <!--As tags em questão no input, servem para dar certas ordens as caixas sendo elas:
+
+            required - para que a caixa seja obrigatorio o preenchimento para o envio dos dados.
+        
+            minlenght - para determinar a quantidade minima de caracteres nesta caixa para o preenchimento.
+        
+            maxlenght - para determinar a quantidade maxima de caracteres nesta caixa para o preenchimento.
+        
+            size - determina o tamanho da caixa e cria uma barra lateral se você estrapolar o tamanho das mesmas.
+        
+            placeholder - você coloca uma dica dentro da caixa de dialogo para que o usuario possa facilitar o uso.
+        
+            autocomplete - para desligar o autocomplete na sua caixa de dialogo. (porém, se você colocar está mesma função, uma vez que já esta ativo no form, dentro dos inputs, você consegue configurar para qual aut ocomplete aquela caixa de texto, corresponde !)
+            
+            -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
