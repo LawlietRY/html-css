@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
+    <form autocomplete="off" action="cadastro.php"> <!--Tag, para sumir com o autocomplette da pagina-->
+
+
+        <!--A função label, vai fazer com que o texto e a caixa fiquem linkados, e de quebra, facilita navegação, pois clicando no texto, você consegue utilizar a caixa de dialogo-->
+        
+        <p><label for="iNome">Nome:</label>
+            <input type="text" name="Nome" id="iNome"></p>
+        <p><label for="iSobrenome">Sobrenome: </label>
+            <input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <p>
+            <input type="submit" value="Enviar"></p>
+    </form>
+
+    <!--Algumas informações bem importantes, todo e qualquer formulario precisa estar dentro de uma tag "form", além disso, existem muitas maneiras de você criar a caixa de informação para o formulario, usando a tag "input" e informando para o codigo, sobre qual tipo de imput você quer fazer!-->
+
 </body>
 </html>
