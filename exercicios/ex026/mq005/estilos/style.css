@@ -23,7 +23,7 @@ header>h1 {
     text-align: center;
 }
 
-span#burguer {
+i#burguer {
     background-color: rgb(48, 48, 48);
     display: block;
     color: white;
@@ -32,7 +32,7 @@ span#burguer {
     cursor: pointer; /*NOVA TAG = utilizada para fazer com que quando passar o mouse por cima de uma determinada figura ou texto, ele mude pra função clicavel, mesmo que não seja clicavel*/
 }
 
-span#burguer:hover {
+i#burguer:hover {
     background-color: white;
     color: black;
 }
